@@ -1,0 +1,30 @@
+form>p {
+    position: relative;
+}
+
+input {
+    padding: 36px 16px 16px 16px;
+    width: 240px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    background-color: lightgray;
+}
+
+label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: black;
+    transition:
+            color 0.1s linear,
+            font-size 0.1s linear,
+            top 0.1s linear;
+}
+
+input:not(:placeholder-shown) + label, input:focus + label {
+    color: gray;
+    font-size: 0.8em;
+    top: 8px;
+}
